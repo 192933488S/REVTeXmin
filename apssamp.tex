@@ -1,0 +1,268 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright REVTeX (c) 2014 The American Physical Society.
+%
+% 	Build-Tool: TeXstudio 4.2.2
+%   Configuration: Default; Try bibtex.exe ?a*.aux for Bibtex if needed
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% Usage
+% 
+% \pageref{}
+% \begin{widetext}
+% \end{widetext}
+% \begin{quotation}\flushleft\leftskip1em
+%	XXX\\
+% \end{quotation}
+% In Appendix:
+%	\appendix
+%	\section{}
+% 	\begin{subequations}
+%	\begin{eqnarray} % \nonumber for no number or \tag{} for other nums
+%	\end{eqnarray}
+%	\end{subequations}
+% 
+% % \begin{figure}
+	% \includegraphics{}%
+	% \caption{\label{}}
+	% \end{figure}
+
+% Surround figure environment with turnpage environment for landscape
+% figure
+% \begin{turnpage}
+	% \begin{figure}
+		% \includegraphics{}%
+		% \caption{\label{}}
+		% \end{figure}
+	% \end{turnpage}
+% 
+% \begin{figure*}
+% \includegraphics{fig_2}% Here is how to import EPS art
+% \caption{\label{fig:wide}Use the figure* environment to get a wide
+%	figure that spans the page in \texttt{twocolumn} formatting.}
+% \end{figure*}
+%
+% Refer to auguide and summary for detailed author help and commands
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[%
+%reprint,
+preprint, %reprint for production
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+showkeys,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+ prl,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{hyperref}% add hypertext capabilities
+
+% line look good in preprint, not reprint
+\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+% remove for APS submission (default req is US letter)
+% check https://www.overleaf.com/learn/latex/Page_size_and_margins
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\usepackage[english, german]{babel}
+% Use \selectlanguage{english} inside document environment
+%\usepackage{lmodern} % Not needed, just install 'cm-super
+% https://tex.stackexchange.com/questions/1291/why-are-bitmap-fonts-used-automatically/546882#546882
+\usepackage[T1, T2A]{fontenc}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+\selectlanguage{english} 
+\preprint{APS/123-QED}
+
+\title{\textsc{APS} PRL apssamp.tex minimal}% Force line breaks with \\
+\thanks{General introduction}%Only in reprint
+
+\author{Your Name}
+% \altaffiliation[Also at ]{Physics Department, XYZ University.}%Lines break automatically or can be forced with \\
+%\author{Second Author}%
+ \email{your.name@gmail.com}
+\affiliation{%
+ City,\\ Country
+% This line break forced with \textbackslash\textbackslash
+}%
+
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+An article usually includes an abstract, a concise summary of the work
+covered at length in the main body of the article. % avoid citation in abstract
+\begin{description}
+\item[Usage]
+Secondary publications and information retrieval purposes.
+%\item[Structure]
+%You may use the \texttt{description} environment to structure your abstract;
+%use the optional argument of the \verb+\item+ command to give the category of each item. 
+\end{description}
+\end{abstract}
+
+\keywords{Keyword 1, Keyword 2, Keyword 3}
+\maketitle
+
+%\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\label{sec:level1}Section}
+
+This is a very short sentence.\cite{zeilinger_experiment_1999}
+
+\subsection{\label{sec:level2}Subsection}
+
+This is a very short sentence.
+
+\paragraph{Paragraph}
+This is a very short sentence.
+
+
+\subsubsection{Subsubsection}
+
+\paragraph{Paragraph} % check how paragraph works and looks
+AAA
+
+BBB
+
+CCC
+
+\subsubsection{Subsubsection}
+
+\paragraph{Paragraph}
+AAA
+BBB
+CCC
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Maths}
+%
+% fleqn to flush equations left.
+% $\bm{B}$
+% $\mathfrak{B}$
+% $\mathbb{B}$
+% \[ XXX \] %unnumbered single-line eq
+
+Below we have numbered single-line equations; this is the most common
+type of equation in \textit{Physical Review}:
+\begin{eqnarray}\label{eq1}
+\bm{B} = 0\\
+\mathfrak{B} = 0\\
+\mathbb{B} = 0
+\end{eqnarray}
+
+
+\subsection{Subsection}
+
+Multiline equations are obtained.
+
+
+Enclosing display math within
+\verb+\begin{subequations}+ and \verb+\end{subequations}+ will produce
+a set of equations that are labeled with letters, as shown in
+Eqs.~(\ref{subeq:1}) and (\ref{subeq:2}) below.
+You may include any number of single-line and multiline equations,
+although it is probably not a good idea to follow one display math
+directly after another.
+\begin{subequations}
+\label{eq:whole}
+\begin{eqnarray}
+{\cal M}=&&ig_Z^2(4E_1E_2)^{1/2}(l_i^2)^{-1}
+(g_{\sigma_2}^e)^2\chi_{-\sigma_2}(p_2)\nonumber\\
+&&\times
+[\epsilon_i]_{\sigma_1}\chi_{\sigma_1}(p_1).\label{subeq:2}
+\end{eqnarray}
+\begin{equation}
+\left\{
+ abc123456abcdef\alpha\beta\gamma\delta1234556\alpha\beta
+ \frac{1\sum^{a}_{b}}{A^2}
+\right\},\label{subeq:1}
+\end{equation}
+\end{subequations}
+Giving a \verb+\label{#1}+ command directly after the \verb+\begin{subequations}+, 
+allows you to reference all the equations in the \texttt{subequations} environment. 
+For example, the equations in the preceding subequations environment were
+Eqs.~(\ref{eq:whole}).
+
+\subsubsection{Wide equations}
+
+The equation:
+
+\begin{widetext}
+\begin{equation}
+{\cal R}^{(\text{d})}=
+ g_{\sigma_2}^e
+ \left(
+   \frac{[\Gamma^Z(3,21)]_{\sigma_1}}{Q_{12}^2-M_W^2}
+  +\frac{[\Gamma^Z(13,2)]_{\sigma_1}}{Q_{13}^2-M_W^2}
+ \right)
+ + x_WQ_e
+ \left(
+   \frac{[\Gamma^\gamma(3,21)]_{\sigma_1}}{Q_{12}^2-M_W^2}
+  +\frac{[\Gamma^\gamma(13,2)]_{\sigma_1}}{Q_{13}^2-M_W^2}
+ \right)\;. 
+ \label{eq:wideeq}
+\end{equation}
+\end{widetext}
+This is typed to show how the output appears in wide format.
+
+
+%\begin{acknowledgments}
+%\end{acknowledgments}
+
+\appendix
+
+\section{Appendixes}
+
+
+\section{A little more on appendixes}
+
+\begin{equation}
+E=mc^2.
+\end{equation}
+
+
+\bibliography{refs}
+
+\end{document}
