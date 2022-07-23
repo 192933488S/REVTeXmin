@@ -50,8 +50,8 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[%
-%reprint,
-preprint, %reprint for production
+preprint,
+%reprint, %reprint for production %disable also mathlines package, see below; journal type should be selected
 %superscriptaddress,
 %groupedaddress,
 %unsortedaddress,
@@ -59,12 +59,13 @@ preprint, %reprint for production
 %frontmatterverbose, 
 showkeys,
 %preprintnumbers,
-%nofootinbib,
+nofootinbib,
 %nobibnotes,
 %bibnotes,
- amsmath,amssymb,
- aps,
- prl,
+amsmath,
+amssymb,
+aps, %default
+prl,
 %pra,
 %prb,
 %rmp,
