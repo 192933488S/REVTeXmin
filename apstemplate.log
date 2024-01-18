@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.29)  5 AUG 2023 11:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.18)  18 JAN 2024 21:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./apstemplate.tex
 (apstemplate.tex
-LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-06-30>
+LaTeX2e <2023-11-01>
+L3 programming layer <2024-01-04>
 (C:\Users\ludwi\AppData\Local\Programs\MiKTeX\tex/latex/revtex\revtex4-2.cls
 Document Class: revtex4-2 2022/06/05 4.2f (https://journals.aps.org/revtex/ for
  documentation)
@@ -25,18 +25,18 @@ Class revtex4-2 Info: Repairing broken LaTeX eqnarray on input line 417.
 Class revtex4-2 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
 note on input line 492.
 Class revtex4-2 Info: Repairing broken LateX \@sect on input line 814.
-\intertabularlinepenalty=\count185
-\@tbpen=\count186
+\intertabularlinepenalty=\count187
+\@tbpen=\count188
 \@arstrutbox@hline=\box51
 Class revtex4-2 Info: Repairing broken LaTeX \@xbitor on input line 1845.
 Class revtex4-2 Info: Making \typeout \long on input line 2110.
 ltxfront[2022/06/05 4.2f frontmatter package (AO,DPC,MD)]
-\c@affil=\count187
-\c@collab=\count188
+\c@affil=\count189
+\c@collab=\count190
 \absbox=\box52
 ltxgrid[2022/06/05 4.2f page grid package (portions licensed from W. E. Baxter 
 web at superscript.com)]
-\c@linecount=\count189
+\c@linecount=\count191
 \output@latex=\toks17
 \box@size@1=\box53
 \box@size@2=\box54
@@ -47,22 +47,22 @@ web at superscript.com)]
 \column@recovered=\box58
 \pagesofar=\box59
 \footsofar=\box60
-\pagegrid@col=\count190
+\pagegrid@col=\count192
 Class revtex4-2 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
  \\  on input line 5676.
-\c@part=\count191
-\c@section=\count192
-\c@subsection=\count193
-\c@subsubsection=\count194
-\c@paragraph=\count195
-\c@subparagraph=\count196
+\c@part=\count193
+\c@section=\count194
+\c@subsection=\count195
+\c@subsubsection=\count196
+\c@paragraph=\count197
+\c@subparagraph=\count198
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\c@figure=\count197
+\c@figure=\count199
 \fbox@1=\box61
-\c@table=\count198
+\c@table=\count266
 \fbox@2=\box62
-\c@video=\count199
+\c@video=\count267
 \fbox@4=\box63
 \@bibdataout=\write3
 \widetext@top=\box64
@@ -82,7 +82,7 @@ ation)
 Class revtex4-2 Info: RevTeX pointsize 12pt selected on input line 39.
 )
 (C:\Users\ludwi\AppData\Local\Programs\MiKTeX\tex/latex/textcase\textcase.sty
-Package: textcase 2022/07/10 v1.03 Text only upper/lower case changing (DPC)
+Package: textcase 2023/07/27 v1.04 Text only upper/lower case changing (DPC)
 Package textcase Info: Defining Legacy names on input line 20.
 )
 (C:\Users\ludwi\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
@@ -94,7 +94,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip51
 \bibsep=\skip52
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count266
+\c@NAT@ctr=\count268
 )
 Class revtex4-2 Info: Repairing natbib's \BibitemShut on input line 7676.
 
@@ -111,8 +111,8 @@ Class revtex4-2 Info: multicol was not loaded (OK!) on input line 33.
 
 (C:\Users\ludwi\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
-File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count267
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count269
 \l__pdf_internal_box=\box66
 ) (apstemplate.aux)
 \openout1 = `apstemplate.aux'.
@@ -140,22 +140,22 @@ Package natbib Warning: Empty `thebibliography' environment on input line 53.
 ) [1{C:/Users/ludwi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 (apstemplate.aux)
  ***********
-LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-06-30>
+LaTeX2e <2023-11-01>
+L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2514 strings out of 475551
- 36532 string characters out of 5762554
- 1918238 words of memory out of 5000000
- 23788 multiletter control sequences out of 15000+600000
+ 2526 strings out of 474486
+ 36797 string characters out of 5743755
+ 1926528 words of memory out of 5000000
+ 24865 multiletter control sequences out of 15000+600000
  560273 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,7n,53p,197b,170s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,7n,60p,197b,172s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ludwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmr10.pfb><C:/Users/ludwi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmr12.pfb>
-Output written on apstemplate.pdf (1 page, 24728 bytes).
+Output written on apstemplate.pdf (1 page, 24953 bytes).
 PDF statistics:
  16 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
